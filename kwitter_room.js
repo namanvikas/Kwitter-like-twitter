@@ -1,21 +1,13 @@
 var firebaseConfig = {
-      apiKey: "AIzaSyAjCQB9AmZHJ6SvKOckaYOe2hnTNwLCydA",
-      authDomain: "kwitter-7ac90.firebaseapp.com",
-      databaseURL: "https://kwitter-7ac90-default-rtdb.firebaseio.com",
-      projectId: "kwitter-7ac90",
-      storageBucket: "kwitter-7ac90.appspot.com",
-      messagingSenderId: "1086783340190",
-      appId: "1:1086783340190:web:bd31176430f038d0cf858f",
-      measurementId: "G-8Z5KFQRTDG"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-//ADD YOUR FIREBASE LINKS HERE
-
-function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
-       Room_names = childKey;
-      //Start code
-
-      //End code
-      });});}
-getData();
+    apiKey: "AIzaSyCn4mzUihsTAYFQi9r8dRRJ6mUigVYY_6U",
+    authDomain: "kwitter-like-twitter.firebaseapp.com",
+    databaseURL: "https://kwitter-like-twitter-default-rtdb.firebaseio.com",
+    projectId: "kwitter-like-twitter",
+    storageBucket: "kwitter-like-twitter.appspot.com",
+    messagingSenderId: "37076135348",
+    appId: "1:37076135348:web:580bf24cd989919474d6e1",
+    measurementId: "G-EN079V5R3Z"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
