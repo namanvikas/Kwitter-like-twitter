@@ -15,8 +15,6 @@ var firebaseConfig = {
     room_name=document.getElementById("room_name").value;
     firebase.database().ref("/").child(room_name).update({
           purpose:"adding room name"
-          
-          
     })
 ;
 
